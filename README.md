@@ -20,7 +20,7 @@ Penyewaan properti ini juga termasuk dalam contoh ekonomi berbagi. Ekonomi berba
 
 Penelitian ini bertujuan untuk menganalisis faktor apa saja yang dapat mempengaruhi pemilihan penyewaan rumah atau tempat tinggal.
 
-**Problem Statements**
+- **Problem Statements**
     
 Berdasarkan uraian latar belakang masalah yang telah dijelaskan pada bagian sebelumnya, berikut ini merupakan rumusan masalah dari penelitian ini :
 
