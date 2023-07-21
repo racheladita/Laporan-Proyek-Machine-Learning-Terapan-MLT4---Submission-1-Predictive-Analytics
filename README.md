@@ -25,6 +25,7 @@ Penelitian ini bertujuan untuk menganalisis faktor apa saja yang dapat mempengar
     Berdasarkan uraian latar belakang masalah yang telah dijelaskan pada bagian sebelumnya, berikut ini merupakan rumusan masalah dari penelitian ini :
 
     a.   Apa saja faktor yang mempengaruhi pengambilan keputusan untuk menyewa suatu rumah ?
+    
     b.   Apa algoritma yang mampu memprediksi pilihan terbaik untuk menyewa suatu rumah ?
 
 *   Goals
@@ -32,6 +33,7 @@ Penelitian ini bertujuan untuk menganalisis faktor apa saja yang dapat mempengar
     Berikut ini merupakan uraian tujuan dari rumusan masalah yang telah dijelaskan :
     
     a.   Menentukan faktor yang mempengaruhi pengambilan keputusan untuk menyewa suatu rumah.
+    
     b.   Menentukan algoritma yang mampu memprediksi pilihan terbaik untuk menyewa suatu rumah
 
 *   Solution Statements
@@ -39,6 +41,7 @@ Penelitian ini bertujuan untuk menganalisis faktor apa saja yang dapat mempengar
     Untuk memenuhi tujuan dari penelitian ini, berikut merupakan solusi yang dapat penulis ajukan :
     
     a.   Untuk mengetahui algoritma yang terbaik dalam menentukan pilihan penyewaan rumah, akan dilakukan komparasi terhadap tiga jenis algoritma, yaitu KNN, Random Forest dan AdaBoost.
+    
     b.   Setelah ketiga jenis algoritma tersebut berhasil dijalankan, akan dilakukan evaluasi untuk mengukur nilai akurasi pada masing-masing algoritma.
 
 # **Data Understanding**
