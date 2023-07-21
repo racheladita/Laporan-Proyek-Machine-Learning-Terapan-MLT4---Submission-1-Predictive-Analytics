@@ -179,22 +179,23 @@ Keterangan:
 
 * Akurasi yang dihasilkan dari masing-masing algoritma yang telah dijalankan adalah sebagai berikut :
   
-![image](https://github.com/racheladita/Laporan-Proyek-Machine-Learning-Terapan-MLT4---Submission-1-Predictive-Analytics/assets/77524477/bb2907f6-89a8-47fa-9587-3f5e29f3a462)
+    ![image](https://github.com/racheladita/Laporan-Proyek-Machine-Learning-Terapan-MLT4---Submission-1-Predictive-Analytics/assets/77524477/bb2907f6-89a8-47fa-9587-3f5e29f3a462)
 
-Dengan akurasi tertinggi dihasilkan oleh algoritma Random Forest dengan tingkat akurasi sebesar 76.2%.
+    Dengan akurasi tertinggi dihasilkan oleh algoritma Random Forest dengan tingkat akurasi sebesar 76.2%.
 
 * Sedangkan untuk hasil perhitungan MSE akan ditampilkan pada gambar di bawah ini :
-![image](https://github.com/racheladita/Laporan-Proyek-Machine-Learning-Terapan-MLT4---Submission-1-Predictive-Analytics/assets/77524477/985e1d60-60a9-4f9a-b9e2-32598a70a0a2)
+  
+    ![image](https://github.com/racheladita/Laporan-Proyek-Machine-Learning-Terapan-MLT4---Submission-1-Predictive-Analytics/assets/77524477/985e1d60-60a9-4f9a-b9e2-32598a70a0a2)
 
-![image](https://github.com/racheladita/Laporan-Proyek-Machine-Learning-Terapan-MLT4---Submission-1-Predictive-Analytics/assets/77524477/b9381d31-2989-4dbe-8953-e6c8a5c6bd5e)
+    ![image](https://github.com/racheladita/Laporan-Proyek-Machine-Learning-Terapan-MLT4---Submission-1-Predictive-Analytics/assets/77524477/b9381d31-2989-4dbe-8953-e6c8a5c6bd5e)
 
-Dapat dilihat bahwa algoritma Random Forest memiliki tingkat error yang lebih rendah jika dibandingkan dengan algoritma lainnya, dengan tingkat error pada data latih sebesar 21371.358809 dan tingkat error pada data uji sebesar 45315.587228.
+    Dapat dilihat bahwa algoritma Random Forest memiliki tingkat error yang lebih rendah jika dibandingkan dengan algoritma lainnya, dengan tingkat error pada data latih sebesar 21371.358809 dan tingkat error pada data uji sebesar 45315.587228.
 
 *  Hasil pengujian prediksi dari masing-masing model
   
-![image](https://github.com/racheladita/Laporan-Proyek-Machine-Learning-Terapan-MLT4---Submission-1-Predictive-Analytics/assets/77524477/0f33218d-d35b-4403-8081-f34284ab32be)
+    ![image](https://github.com/racheladita/Laporan-Proyek-Machine-Learning-Terapan-MLT4---Submission-1-Predictive-Analytics/assets/77524477/0f33218d-d35b-4403-8081-f34284ab32be)
 
-Dapat dilihat bahwa hasil prediksi menggunakan algoritma Random Forest adalah hasil yang paling mendekati nilai sebenarnya meskipun hasil prediksi ini tidak begitu akurat dengan nilai sebenarnya dikarenakan akurasinya yang belum begitu tinggi. Oleh karena itu, algoritma Random Forest dipilih sebagai model utama yang digunakan untuk memprediksi harga sewa rumah di India.
+    Dapat dilihat bahwa hasil prediksi menggunakan algoritma Random Forest adalah hasil yang paling mendekati nilai sebenarnya meskipun hasil prediksi ini tidak begitu akurat dengan nilai sebenarnya dikarenakan akurasinya yang belum begitu tinggi. Oleh karena itu, algoritma Random Forest dipilih sebagai model utama yang digunakan untuk memprediksi harga sewa rumah di India.
 
 # **Referensi**
 
