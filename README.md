@@ -1,4 +1,3 @@
-"""
 # **Laporan Proyek Machine Learning Terapan (MLT4) - Submission 1 Predictive Analytics**
 
 *   Nama : Adita Putri Puspaningrum
@@ -144,6 +143,7 @@ boosting.fit(X_train, y_train)
 
 Pada penelitian ini, proses evaluasi dilakukan dengan menggunakan metrik evaluasi untuk menghitung serta menampilkan hasil akurasi dan mean squared error (MSE) dari model pada masing-masing algoritma yang telah dijalankan. Akurasi adalah ukuran yang menentukan tingkat kemiripan antara hasil prediksi dengan nilai yang sebenarnya (y_test) (Wikipedia, 2022). Sedangkan Mean squared error (MSE) adalah alat ukur untuk mengukur tingkat error yang terjadi dalam model statistik dengan cara menghitung jumlah selisih kuadrat rata-rata nilai sebenarnya dengan nilai prediksi (Dicoding, 2023). MSE didefinisikan dalam persamaan berikut :
 ![image](https://github.com/racheladita/Laporan-Proyek-Machine-Learning-Terapan-MLT4---Submission-1-Predictive-Analytics/assets/77524477/fc2ab7d7-fdc7-4a59-9b27-eb6eb55e20b4)
+
 Keterangan:
   N = jumlah dataset
   yi = nilai sebenarnya
@@ -151,10 +151,12 @@ Keterangan:
 
 * Akurasi yang dihasilkan dari masing-masing algoritma yang telah dijalankan adalah sebagai berikut :
 ![image](https://github.com/racheladita/Laporan-Proyek-Machine-Learning-Terapan-MLT4---Submission-1-Predictive-Analytics/assets/77524477/bb2907f6-89a8-47fa-9587-3f5e29f3a462)
+
 Dengan akurasi tertinggi dihasilkan oleh algoritma Random Forest dengan tingkat akurasi sebesar 76.2%.
 
 * Sedangkan untuk hasil perhitungan MSE akan ditampilkan pada gambar di bawah ini :
 ![image](https://github.com/racheladita/Laporan-Proyek-Machine-Learning-Terapan-MLT4---Submission-1-Predictive-Analytics/assets/77524477/985e1d60-60a9-4f9a-b9e2-32598a70a0a2)
+
 ![image](https://github.com/racheladita/Laporan-Proyek-Machine-Learning-Terapan-MLT4---Submission-1-Predictive-Analytics/assets/77524477/b9381d31-2989-4dbe-8953-e6c8a5c6bd5e)
 
 Dapat dilihat bahwa algoritma Random Forest memiliki tingkat error yang lebih rendah jika dibandingkan dengan algoritma lainnya, dengan tingkat error pada data latih sebesar 21371.358809 dan tingkat error pada data uji sebesar 45315.587228.
@@ -179,4 +181,3 @@ quicktable.io. (2022). Cara Melakukan Train Test Split dalam Machine Learning. D
 Suparwoko, Woko. 2013. PENINGKATAN KAPASITAS PERUMAHAN SWADAYA DI INDONESIA. Jurnal Universitas Islam Indonesia. 56-52. https://www.researchgate.net/publication/272357548_BAB_3_KEBIJAKAN_DAN_PRAKTEK_PEMBANGUNAN_PERUMAHAN_SEJUMLAH_NEGARA_DI_ASIA-PASIFIK
 
 Jurnal UMM, 2023. https://eprints.umm.ac.id/39299/3/BAB%202.pdf
-"""
