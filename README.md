@@ -22,7 +22,7 @@ Penelitian ini bertujuan untuk menganalisis faktor apa saja yang dapat mempengar
 
 - **Problem Statements**
     
-Berdasarkan uraian latar belakang masalah yang telah dijelaskan pada bagian sebelumnya, berikut ini merupakan rumusan masalah dari penelitian ini :
+    Berdasarkan uraian latar belakang masalah yang telah dijelaskan pada bagian sebelumnya, berikut ini merupakan rumusan masalah dari penelitian ini :
 
 1.   Apa saja faktor yang mempengaruhi pengambilan keputusan untuk menyewa suatu rumah ?
 2.   Apa algoritma yang mampu memprediksi pilihan terbaik untuk menyewa suatu rumah ?
