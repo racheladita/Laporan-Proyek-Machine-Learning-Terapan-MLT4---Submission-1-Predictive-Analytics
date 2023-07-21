@@ -8,7 +8,7 @@
 
 # **Domain proyek**
 
-> Perumahan di India memiliki beragam jenis kategori, mulai dari istana milik mantan maharaja yang mewah, hingga gedung apartemen modern di kota-kota besar, bahkan gubuk-gubuk di desa-desa terpencil. Tingginya  angka  pertumbuhan  penduduk, adanya urbanisasi berkelanjutan, dan  masih  lemahnya kondisi ekonomi penduduk menyebabkan kesenjangan pemenuhan kebutuhan perumahan di  India meningkat (Suparwoko, 2013). Sehingga masih banyak orang di India yang belum memiliki akses terhadap perumahan yang layak.
+Perumahan di India memiliki beragam jenis kategori, mulai dari istana milik mantan maharaja yang mewah, hingga gedung apartemen modern di kota-kota besar, bahkan gubuk-gubuk di desa-desa terpencil. Tingginya  angka  pertumbuhan  penduduk, adanya urbanisasi berkelanjutan, dan  masih  lemahnya kondisi ekonomi penduduk menyebabkan kesenjangan pemenuhan kebutuhan perumahan di  India meningkat (Suparwoko, 2013). Sehingga masih banyak orang di India yang belum memiliki akses terhadap perumahan yang layak.
 
 Menurut Human Rights Measurement Initiative, India baru mencapai 60,9% dari potensi hak atas perumahan yang semestinya dapat terpenuhi berdasarkan tingkat pendapatan negara tersebut. Artinya, masih banyak orang di India yang tidak bisa memperoleh perumahan yang seharusnya bisa mereka dapatkan.
 
@@ -79,19 +79,25 @@ Penelitian ini bertujuan untuk menganalisis faktor apa saja yang dapat mempengar
       Dari matriks heatmap tersebut, semakin terlihat bahwa fitur BHK, Size dan Bathroom kurang berkorelasi dengan fitur target, yaitu Rent. Hal ini diduga disebabkan karena kurangnya data dalam penelitian dan diduga pula akan mempengaruhi akurasi dari model yang akan dijalankan. Sedangkan, fitur yang memiliki korelasi tinggi justru terjadi pada fitur BHK dengan fitur Bathroom yang mencapai korelasi 0.73.
 
   *   Korelasi Antara Fitur Kategorik dengan Fitur Target (Rent)
+    
       ![image](https://github.com/racheladita/Laporan-Proyek-Machine-Learning-Terapan-MLT4---Submission-1-Predictive-Analytics/assets/77524477/740c0cbb-e783-444c-97b2-375d8584698e)
+      
       Grafik di atas menunjukan korelasi antara fitur target (Rent) dengan fitur Area Type, dimana tipe area 'Carpet Area' memiliki korelasi yang lebih tinggi dengan fitur Rent jika dibandingkan dengan 'Super Area'.
       
       ![image](https://github.com/racheladita/Laporan-Proyek-Machine-Learning-Terapan-MLT4---Submission-1-Predictive-Analytics/assets/77524477/057b1ed4-0207-47d4-8ba3-78a3790727f0)
+      
       Grafik di atas menunjukan korelasi antara fitur target (Rent) dengan fitur City, dimana kota Mumbai merupakan kota yang paling banyak memiliki rumah yang disewakan. Dengan alasan ini, mendukung pernyataan bahwa korelasi tertinggi antara fitur target (Rent) dengan fitur City terjadi di kota Mumbai.
  
       ![image](https://github.com/racheladita/Laporan-Proyek-Machine-Learning-Terapan-MLT4---Submission-1-Predictive-Analytics/assets/77524477/c3ac80ba-80c0-473d-9243-de4ba6cfe824)
+      
       Grafik di atas menunjukan korelasi antara fitur target (Rent) dengan fitur Furnishing Status, dimana korelasi tertinggi ditunjukkan oleh status 'Furnished' atau dengan kata lain rumah yang kondisinya disewakan beserta dengan perabotannya akan memiliki harga sewa yang lebih tinggi.
       
       ![image](https://github.com/racheladita/Laporan-Proyek-Machine-Learning-Terapan-MLT4---Submission-1-Predictive-Analytics/assets/77524477/81a6aeed-e37b-47b4-ba9d-9ff1285e6d50)
+      
       Grafik di atas menunjukan korelasi antara fitur target (Rent) dengan fitur Tenant Preferred, dimana korelasi tertinggi ditunjukkan oleh 'Family' atau dengan kata lain rumah yang disewakan untuk sebuah keluarga akan memiliki harga sewa yang lebih tinggi dibandingkan dengan tipe penyewa yang lain.
       
       ![image](https://github.com/racheladita/Laporan-Proyek-Machine-Learning-Terapan-MLT4---Submission-1-Predictive-Analytics/assets/77524477/97512015-14b7-4f47-a34b-ec0161608e40)
+      
       Grafik di atas menunjukan korelasi antara fitur target (Rent) dengan fitur Point of Contact, dimana korelasi tertinggi ditunjukkan oleh 'Contact Agent' atau dengan kata lain penyewaan rumah yang membutuhkan pihak ketiga (agen) dalam melancarkan proses transaksinya akan memiliki harga sewa yang lebih tinggi.
 
 # **Data Preparation**
@@ -112,9 +118,9 @@ Seperti yang telah dijelaskan pada bagian sebelumnya, pada penelitian ini akan d
 
 *  K-Nearest Neighbour (KNN)
    KNN bekerja dengan membandingkan jarak satu sampel ke sampel pelatihan lain dengan memilih sejumlah k tetangga terdekat (dengan k adalah sebuah angka positif) yang biasa digunakan untuk kasus klasifikasi dan regresi (Dicoding, 2023). Pada penelitian ini, akan digunakan library sklearn.neighbors untuk bisa menjalankan algoritma KNeighborsRegressor. Tahap pertama yang dilakukan adalah menentukan parameter n_neighbors, dimana penulis menggunakan n_neighbors = 14 untuk mendapatkan akurasi yang optimal. Parameter n_neighbors sendiri merupakan jumlah k tetangga tedekat yang merupakan parameter terpenting dalam algoritma KNN. Selanjutnya, untuk membangun model dijalankan perintah
-```
-knn.fit(X_train, y_train)
-```
+  ```
+  knn.fit(X_train, y_train)
+  ```
 
 *  Random Forest
    Random forest adalah salah satu algoritma supervised learning yang termasuk ke dalam kelompok model ensemble (group) yang disusun dari banyak algoritma pohon (decision tree) yang pembagian data dan fiturnya dipilih secara acak (Dicoding, 2023). Kelebihan dari menggunakan algoritma ini yaitu dapat mengatasi noise dan missing value serta dapat mengatasi data dalam jumlah yang besar, adapun kekurangan pada algoritma Random Forest yaitu interpretasi yang sulit dan membutuhkan tuning model yang tepat untuk data (UMM, 2023). Pada penelitian ini, akan digunakan library sklearn.ensemble untuk bisa menjalankan algoritma RandomForestRegressor. Tahap pertama yang dilakukan adalah menentukan parameter n_estimators, max_depth, random_state dan n_jobs.
@@ -124,9 +130,9 @@ knn.fit(X_train, y_train)
    *  Parameter n_jobs adalah jumlah job (pekerjaan) yang digunakan secara paralel. Penulis menggunakan n_jobs = -1 yang artinya semua proses berjalan secara paralel.
 
    Selanjutnya, setelah seluruh parameter di-set, untuk membangun model random forest akan dijalankan perintah
-```
-rf.fit(X_train, y_train)
-```
+  ```
+  rf.fit(X_train, y_train)
+  ```
 
 *  AdaBoost
    Algoritma boosting bekerja dengan membangun model dari data latih yang kemudian membuat model kedua yang bertugas memperbaiki kesalahan dari model pertama, dimana model ditambahkan sampai data latih terprediksi dengan baik atau telah mencapai jumlah maksimum model untuk ditambahkan (Dicoding, 2023). Pada penelitian ini, akan digunakan library sklearn.ensemble untuk bisa menjalankan algoritma AdaBoostRegressor. Tahap pertama yang dilakukan adalah menentukan parameter n_estimators, max_depth, random_state dan n_jobs.
@@ -135,9 +141,9 @@ rf.fit(X_train, y_train)
    *  Parameter random_state digunakan untuk mengontrol random number generator yang digunakan dan penulis menggunakan random_state = 5.
 
    Selanjutnya, setelah seluruh parameter di-set, untuk membangun model AdaBoost akan dijalankan perintah
-```
-boosting.fit(X_train, y_train)
-```
+  ```
+  boosting.fit(X_train, y_train)
+  ```
 
 # **Evaluation**
 
