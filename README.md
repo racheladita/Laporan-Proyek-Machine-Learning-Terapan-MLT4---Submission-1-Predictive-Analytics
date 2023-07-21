@@ -1,6 +1,6 @@
 # **Laporan Proyek Machine Learning Terapan (MLT4) - Submission 1 Predictive Analytics**
 
-*   Nama : Adita Putri Puspaningrum
+Nama : Adita Putri Puspaningrum
 
 ---
 
@@ -21,17 +21,17 @@ Penyewaan properti ini juga termasuk dalam contoh ekonomi berbagi. Ekonomi berba
 Penelitian ini bertujuan untuk menganalisis faktor apa saja yang dapat mempengaruhi pemilihan penyewaan rumah atau tempat tinggal.
 
 *   Problem Statements
-  > Berdasarkan uraian latar belakang masalah yang telah dijelaskan pada bagian sebelumnya, berikut ini merupakan rumusan masalah dari penelitian ini :
+    Berdasarkan uraian latar belakang masalah yang telah dijelaskan pada bagian sebelumnya, berikut ini merupakan rumusan masalah dari penelitian ini :
   1.   Apa saja faktor yang mempengaruhi pengambilan keputusan untuk menyewa suatu rumah ?
   2.   Apa algoritma yang mampu memprediksi pilihan terbaik untuk menyewa suatu rumah ?
 
 *   Goals
-  > Berikut ini merupakan uraian tujuan dari rumusan masalah yang telah dijelaskan :
+    Berikut ini merupakan uraian tujuan dari rumusan masalah yang telah dijelaskan :
   1.   Menentukan faktor yang mempengaruhi pengambilan keputusan untuk menyewa suatu rumah.
   2.   Menentukan algoritma yang mampu memprediksi pilihan terbaik untuk menyewa suatu rumah
 
 * Solution Statements
-  > Untuk memenuhi tujuan dari penelitian ini, berikut merupakan solusi yang dapat penulis ajukan :
+  Untuk memenuhi tujuan dari penelitian ini, berikut merupakan solusi yang dapat penulis ajukan :
   1.   Untuk mengetahui algoritma yang terbaik dalam menentukan pilihan penyewaan rumah, akan dilakukan komparasi terhadap tiga jenis algoritma, yaitu KNN, Random Forest dan AdaBoost.
   2.   Setelah ketiga jenis algoritma tersebut berhasil dijalankan, akan dilakukan evaluasi untuk mengukur nilai akurasi pada masing-masing algoritma.
 
