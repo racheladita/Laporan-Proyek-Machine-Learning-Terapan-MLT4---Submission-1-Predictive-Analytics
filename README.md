@@ -54,17 +54,29 @@ Penelitian ini bertujuan untuk menganalisis faktor apa saja yang dapat mempengar
 
 * Variabel-variabel yang terdapat pada dataset 'House Rent Prediction' ini adalah sebagai berikut :
   1.  Posted On : Tanggal data diposting.
+     
   2.  BHK : Jumlah dari kamar tidur, aula, dan dapur.
+     
   3.  Rent : Harga sewa dari rumah/apartemen.
+     
   4.  Size : Ukuran dari rumah/apartemen dalam square feet (sqft).
+     
   5.  Floor : Letak lantai dari apartemen/rumah susun yang disewakan dan jumlah lantai dari bangunan rumah/apartemen tersebut.
+     
   6.  Area Type : Ukuran dari rumah dalam kategori Super Area, Carpet Area atau Build Area.
+     
   7.  Area Locality : Lokasi rumah/apartemen.
+      
   8.  City : Kota dimana rumah/apartemen berada.
+      
   9.  Furnishing Status : Status perabotan rumah/apartemen, baik Furnished, Semi-Furnished atau Unfurnished.
+      
   10. Tenant Preferred : Jenis penyewa yang diinginkan oleh pemilik atau agen.
+      
   11. Bathroom : Jumlah kamar mandi.
+      
   12. Point of Contact : Kontak yang harus dihubungi untuk informasi lebih lanjut mengenai rumah/apartemen yang disewakan.
+      
   Dari kedua belas fitur tersebut, fitur Posted On merupakan fitur yang tidak begitu mempengaruhi harga sewa rumah, sehingga fitur Posted On bisa langsung dihapus.   
 
 
