@@ -8,7 +8,7 @@
 
 # **Domain proyek**
 
-Perumahan di India memiliki beragam jenis kategori, mulai dari istana milik mantan maharaja yang mewah, hingga gedung apartemen modern di kota-kota besar, bahkan gubuk-gubuk di desa-desa terpencil. Tingginya  angka  pertumbuhan  penduduk, adanya urbanisasi berkelanjutan, dan  masih  lemahnya kondisi ekonomi penduduk menyebabkan kesenjangan pemenuhan kebutuhan perumahan di  India meningkat (Suparwoko, 2013). Sehingga masih banyak orang di India yang belum memiliki akses terhadap perumahan yang layak.
+> Perumahan di India memiliki beragam jenis kategori, mulai dari istana milik mantan maharaja yang mewah, hingga gedung apartemen modern di kota-kota besar, bahkan gubuk-gubuk di desa-desa terpencil. Tingginya  angka  pertumbuhan  penduduk, adanya urbanisasi berkelanjutan, dan  masih  lemahnya kondisi ekonomi penduduk menyebabkan kesenjangan pemenuhan kebutuhan perumahan di  India meningkat (Suparwoko, 2013). Sehingga masih banyak orang di India yang belum memiliki akses terhadap perumahan yang layak.
 
 Menurut Human Rights Measurement Initiative, India baru mencapai 60,9% dari potensi hak atas perumahan yang semestinya dapat terpenuhi berdasarkan tingkat pendapatan negara tersebut. Artinya, masih banyak orang di India yang tidak bisa memperoleh perumahan yang seharusnya bisa mereka dapatkan.
 
