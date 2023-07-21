@@ -54,27 +54,16 @@ Penelitian ini bertujuan untuk menganalisis faktor apa saja yang dapat mempengar
 
 * Variabel-variabel yang terdapat pada dataset 'House Rent Prediction' ini adalah sebagai berikut :
   1.  Posted On : Tanggal data diposting.
-     
   2.  BHK : Jumlah dari kamar tidur, aula, dan dapur.
-     
   3.  Rent : Harga sewa dari rumah/apartemen.
-     
-  4.  Size : Ukuran dari rumah/apartemen dalam square feet (sqft).
-     
+  4.  Size : Ukuran dari rumah/apartemen dalam square feet (sqft)
   5.  Floor : Letak lantai dari apartemen/rumah susun yang disewakan dan jumlah lantai dari bangunan rumah/apartemen tersebut.
-     
   6.  Area Type : Ukuran dari rumah dalam kategori Super Area, Carpet Area atau Build Area.
-     
   7.  Area Locality : Lokasi rumah/apartemen.
-      
   8.  City : Kota dimana rumah/apartemen berada.
-      
   9.  Furnishing Status : Status perabotan rumah/apartemen, baik Furnished, Semi-Furnished atau Unfurnished.
-      
   10. Tenant Preferred : Jenis penyewa yang diinginkan oleh pemilik atau agen.
-      
   11. Bathroom : Jumlah kamar mandi.
-      
   12. Point of Contact : Kontak yang harus dihubungi untuk informasi lebih lanjut mengenai rumah/apartemen yang disewakan.
       
   Dari kedua belas fitur tersebut, fitur Posted On merupakan fitur yang tidak begitu mempengaruhi harga sewa rumah, sehingga fitur Posted On bisa langsung dihapus.   
@@ -82,6 +71,7 @@ Penelitian ini bertujuan untuk menganalisis faktor apa saja yang dapat mempengar
 
 * Explotary Data Analysis
   *   Univariate Analysis
+    
       ![image](https://github.com/racheladita/Laporan-Proyek-Machine-Learning-Terapan-MLT4---Submission-1-Predictive-Analytics/assets/77524477/a5fefd6c-ca66-4a30-aaa5-8b0bde5bc751)
 
       Gambar di atas merupakan grafik sebaran analisis univariat untuk setiap fitur numerik yang direpresentasikan secara terpisah. Dari grafik tersebut, kita bisa mengambil data bahwa :
@@ -91,6 +81,7 @@ Penelitian ini bertujuan untuk menganalisis faktor apa saja yang dapat mempengar
       4. Harga sewa rumah rata-rata di bawah 30.000.
 
   *   Multivariate Analysis
+    
       ![image](https://github.com/racheladita/Laporan-Proyek-Machine-Learning-Terapan-MLT4---Submission-1-Predictive-Analytics/assets/77524477/887d7a47-5474-4b57-8668-bd4061d93797)
 
       Gambar di atas merupakan grafik sebaran analisis multivariat yang menunjukkan hubungan antara dua atau lebih fitur dalam data numerik. Selain itu, hubungan atau korelasi antar fitur data numerik ini juga bisa dilihat dari matriks heatmap seperti gambar di bawah ini.
@@ -122,15 +113,19 @@ Penelitian ini bertujuan untuk menganalisis faktor apa saja yang dapat mempengar
       Grafik di atas menunjukan korelasi antara fitur target (Rent) dengan fitur Point of Contact, dimana korelasi tertinggi ditunjukkan oleh 'Contact Agent' atau dengan kata lain penyewaan rumah yang membutuhkan pihak ketiga (agen) dalam melancarkan proses transaksinya akan memiliki harga sewa yang lebih tinggi.
 
 # **Data Preparation**
+
 Berikut ini merupakan tahapan-tahapan yang dilakukan dalam mempersiapkan data sebelum dilakukan pemodelan.
 
 *   One Hot Encoding
+  
     One hot encoding adalah sebuah proses yang biasanya dilakukan pada bagian pre-processing yang bertujuan untuk mengubah data kategorik menjadi data numerik dimana setiap kategori unik akan diubah menjadi kolom/parameter baru dengan nilai 0 atau 1 (Ryan, 2021). Pada penelitian ini, fitur yang akan diubah menjadi data numerik adalah fitur Area Type, City, Furnishing Status, Tenant Preferred dan Point of Contact.
 
 *   Pembagian Data Latih dan Data Uji (Train Test Split)
+  
     Train test split adalah proses penting yang umumnya dilakukan dalam pembelajaran mesin yang digunakan untuk membagi data menjadi data latih dan data uji (TridentData, 2022). Pada penelitian ini, dataset yang ada akan dibagi menjadi 2 bagian yaitu data latih dan data uji dengan rasio 85:15. Sehingga, sebanyak 3508 data latih akan digunakan untuk membangun model, sedangkan 620 data akan digunakan sebagai data uji untuk menguji performa model yang akan dibuat. Proses pembagian data ini dilakukan dengan menggunakan modul train_test_split dari library scikit-learn.
      
 *   Normalisasi Data
+  
     Algoritma pada pembelajaran mesin akan memiliki performa lebih baik dan bekerja lebih cepat jika dimodelkan dengan data yang seragam. Data seragam yang dimaksud adalah data yang memiliki skala relatif sama. Pada penelitian ini, proses normalisasi data dilakukan dengan menggunakan StandardScaler dari library sklearn.preprocessing.
 
 # **Modeling**
@@ -138,13 +133,16 @@ Berikut ini merupakan tahapan-tahapan yang dilakukan dalam mempersiapkan data se
 Seperti yang telah dijelaskan pada bagian sebelumnya, pada penelitian ini akan dilakukan pemodelan dengan menggunakan 3 algoritma yang berbeda, yaitu K-Nearest Neighbour (KNN), Random Forest dan AdaBoost.
 
 *  K-Nearest Neighbour (KNN)
+  
    KNN bekerja dengan membandingkan jarak satu sampel ke sampel pelatihan lain dengan memilih sejumlah k tetangga terdekat (dengan k adalah sebuah angka positif) yang biasa digunakan untuk kasus klasifikasi dan regresi (Dicoding, 2023). Pada penelitian ini, akan digunakan library sklearn.neighbors untuk bisa menjalankan algoritma KNeighborsRegressor. Tahap pertama yang dilakukan adalah menentukan parameter n_neighbors, dimana penulis menggunakan n_neighbors = 14 untuk mendapatkan akurasi yang optimal. Parameter n_neighbors sendiri merupakan jumlah k tetangga tedekat yang merupakan parameter terpenting dalam algoritma KNN. Selanjutnya, untuk membangun model dijalankan perintah
   ```
   knn.fit(X_train, y_train)
   ```
 
 *  Random Forest
+  
    Random forest adalah salah satu algoritma supervised learning yang termasuk ke dalam kelompok model ensemble (group) yang disusun dari banyak algoritma pohon (decision tree) yang pembagian data dan fiturnya dipilih secara acak (Dicoding, 2023). Kelebihan dari menggunakan algoritma ini yaitu dapat mengatasi noise dan missing value serta dapat mengatasi data dalam jumlah yang besar, adapun kekurangan pada algoritma Random Forest yaitu interpretasi yang sulit dan membutuhkan tuning model yang tepat untuk data (UMM, 2023). Pada penelitian ini, akan digunakan library sklearn.ensemble untuk bisa menjalankan algoritma RandomForestRegressor. Tahap pertama yang dilakukan adalah menentukan parameter n_estimators, max_depth, random_state dan n_jobs.
+   
    *  Parameter n_estimators merupakan jumlah trees (pohon) di forest dan penulis menggunakan n_estimator = 50.
    *  Parameter max_depth adalah kedalaman maksimum setiap tree dimana penulis menggunakan max_depth = 10.
    *  Parameter random_state digunakan untuk mengontrol random number generator yang digunakan dan penulis menggunakan random_state = 40.
@@ -156,7 +154,9 @@ Seperti yang telah dijelaskan pada bagian sebelumnya, pada penelitian ini akan d
   ```
 
 *  AdaBoost
+  
    Algoritma boosting bekerja dengan membangun model dari data latih yang kemudian membuat model kedua yang bertugas memperbaiki kesalahan dari model pertama, dimana model ditambahkan sampai data latih terprediksi dengan baik atau telah mencapai jumlah maksimum model untuk ditambahkan (Dicoding, 2023). Pada penelitian ini, akan digunakan library sklearn.ensemble untuk bisa menjalankan algoritma AdaBoostRegressor. Tahap pertama yang dilakukan adalah menentukan parameter n_estimators, max_depth, random_state dan n_jobs.
+   
    *  Parameter n_estimators merupakan jumlah maksimum estimator di mana boosting dihentikan dan penulis menggunakan n_estimator = 40.
    *  Parameter learning_rate adalah bobot yang diterapkan pada setiap regressor di masing-masing proses iterasi boosting dimana penulis menggunakan learning_rate = 0.05.
    *  Parameter random_state digunakan untuk mengontrol random number generator yang digunakan dan penulis menggunakan random_state = 5.
@@ -169,6 +169,7 @@ Seperti yang telah dijelaskan pada bagian sebelumnya, pada penelitian ini akan d
 # **Evaluation**
 
 Pada penelitian ini, proses evaluasi dilakukan dengan menggunakan metrik evaluasi untuk menghitung serta menampilkan hasil akurasi dan mean squared error (MSE) dari model pada masing-masing algoritma yang telah dijalankan. Akurasi adalah ukuran yang menentukan tingkat kemiripan antara hasil prediksi dengan nilai yang sebenarnya (y_test) (Wikipedia, 2022). Sedangkan Mean squared error (MSE) adalah alat ukur untuk mengukur tingkat error yang terjadi dalam model statistik dengan cara menghitung jumlah selisih kuadrat rata-rata nilai sebenarnya dengan nilai prediksi (Dicoding, 2023). MSE didefinisikan dalam persamaan berikut :
+
 ![image](https://github.com/racheladita/Laporan-Proyek-Machine-Learning-Terapan-MLT4---Submission-1-Predictive-Analytics/assets/77524477/fc2ab7d7-fdc7-4a59-9b27-eb6eb55e20b4)
 
 Keterangan:
@@ -177,6 +178,7 @@ Keterangan:
   y_pred = nilai prediksi
 
 * Akurasi yang dihasilkan dari masing-masing algoritma yang telah dijalankan adalah sebagai berikut :
+  
 ![image](https://github.com/racheladita/Laporan-Proyek-Machine-Learning-Terapan-MLT4---Submission-1-Predictive-Analytics/assets/77524477/bb2907f6-89a8-47fa-9587-3f5e29f3a462)
 
 Dengan akurasi tertinggi dihasilkan oleh algoritma Random Forest dengan tingkat akurasi sebesar 76.2%.
@@ -189,6 +191,7 @@ Dengan akurasi tertinggi dihasilkan oleh algoritma Random Forest dengan tingkat 
 Dapat dilihat bahwa algoritma Random Forest memiliki tingkat error yang lebih rendah jika dibandingkan dengan algoritma lainnya, dengan tingkat error pada data latih sebesar 21371.358809 dan tingkat error pada data uji sebesar 45315.587228.
 
 *  Hasil pengujian prediksi dari masing-masing model
+  
 ![image](https://github.com/racheladita/Laporan-Proyek-Machine-Learning-Terapan-MLT4---Submission-1-Predictive-Analytics/assets/77524477/0f33218d-d35b-4403-8081-f34284ab32be)
 
 Dapat dilihat bahwa hasil prediksi menggunakan algoritma Random Forest adalah hasil yang paling mendekati nilai sebenarnya meskipun hasil prediksi ini tidak begitu akurat dengan nilai sebenarnya dikarenakan akurasinya yang belum begitu tinggi. Oleh karena itu, algoritma Random Forest dipilih sebagai model utama yang digunakan untuk memprediksi harga sewa rumah di India.
