@@ -1,6 +1,4 @@
-# **Laporan Proyek Machine Learning Terapan (MLT4) - Submission 1 Predictive Analytics**
-
-Nama : Adita Putri Puspaningrum
+# **Laporan Proyek Machine Learning - Adita Putri Puspaningrum**
 
 ---
 
@@ -74,7 +72,7 @@ Penelitian ini bertujuan untuk menganalisis faktor apa saja yang dapat mempengar
     
       ![image](https://github.com/racheladita/Laporan-Proyek-Machine-Learning-Terapan-MLT4---Submission-1-Predictive-Analytics/assets/77524477/a5fefd6c-ca66-4a30-aaa5-8b0bde5bc751)
 
-      Gambar di atas merupakan grafik sebaran analisis univariat untuk setiap fitur numerik yang direpresentasikan secara terpisah. Dari grafik tersebut, kita bisa mengambil data bahwa :
+      Gambar di atas merupakan grafik sebaran analisis univariat untuk setiap fitur numerik yang direpresentasikan secara terpisah. Dari grafik tersebut, informasi yang dapat diambil adalah sebagai berikut :
       1. Rumah yang disewakan memiliki 1 hingga 3 BHK (Bedroom, Hall, Kitchen), dimana jumlah BHK terbanyak adalah 2.
       2. Kebanyakan rumah yang disewakan memiliki ukuran atau luas bangunan di bawah 2000 square feet.
       3. Rumah yang disewakan memiliki 1 hingga 3 kamar mandi, dimana jumlah kamar mandi terbanyak adalah 2.
