@@ -6,17 +6,17 @@
 
 # **Domain proyek**
 
-Perumahan di India memiliki beragam jenis kategori, mulai dari istana milik mantan maharaja yang mewah, hingga gedung apartemen modern di kota-kota besar, bahkan gubuk-gubuk di desa-desa terpencil. Tingginya  angka  pertumbuhan  penduduk, adanya urbanisasi berkelanjutan, dan  masih  lemahnya kondisi ekonomi penduduk menyebabkan kesenjangan pemenuhan kebutuhan perumahan di  India meningkat (Suparwoko, 2013). Sehingga masih banyak orang di India yang belum memiliki akses terhadap perumahan yang layak.
+Perumahan di India memiliki beragam jenis kategori, mulai dari istana milik mantan maharaja yang mewah, hingga gedung apartemen modern di kota-kota besar, bahkan gubuk-gubuk di desa-desa terpencil. Tingginya  angka  pertumbuhan  penduduk, adanya urbanisasi berkelanjutan, dan  masih  lemahnya kondisi ekonomi penduduk menyebabkan kesenjangan pemenuhan kebutuhan perumahan di  India meningkat [1]. Sehingga masih banyak orang di India yang belum memiliki akses terhadap perumahan yang layak.
 
 Menurut Human Rights Measurement Initiative, India baru mencapai 60,9% dari potensi hak atas perumahan yang semestinya dapat terpenuhi berdasarkan tingkat pendapatan negara tersebut. Artinya, masih banyak orang di India yang tidak bisa memperoleh perumahan yang seharusnya bisa mereka dapatkan.
 
 Salah satu pilihan bagi orang-orang yang belum memiliki rumah adalah menyewa properti, seperti rumah atau toko. Ketika seseorang menyewa, mereka membayar sejumlah uang sebagai imbalan untuk menggunakan properti tersebut sementara waktu. Jenis penyewaan yang ada juga berbeda-beda. Ada yang menyebutnya "sewa kotor" dimana penyewa membayar jumlah sewa tetap, sementara pemilik properti bertanggung jawab atas biaya-biaya lain seperti pajak dan perawatan.
 
-Penyewaan properti ini juga termasuk dalam contoh ekonomi berbagi. Ekonomi berbagi merupakan suatu tindakan modernisasi dari konsumsi kolaboratif di mana orang dapat memanfaatkan properti (dalam kasus ini properti tempat tinggal) milik orang lain untuk memenuhi kebutuhan mereka (Ibnu, 2021).
+Penyewaan properti ini juga termasuk dalam contoh ekonomi berbagi. Ekonomi berbagi merupakan suatu tindakan modernisasi yang perusahaan perantaranya menggunakan platform _online_ untuk memfasilitasi dan menurunkan biaya transaksi nirlaba untuk memberikan akses sementara tanpa transfer kepemilikan pada sumber daya konsumen yang menganggur [2]. Dengan kata lain seseorang atau sekelompok orang dapat memanfaatkan properti (dalam kasus ini properti tempat tinggal) milik orang lain untuk memenuhi kebutuhan mereka.
 
 # **Business Understanding**
 
-Penelitian ini bertujuan untuk menganalisis faktor apa saja yang dapat mempengaruhi pemilihan penyewaan rumah atau tempat tinggal.
+Penelitian ini bertujuan untuk menganalisis faktor apa saja yang dapat mempengaruhi pemilihan penyewaan rumah atau tempat tinggal. Dengan begitu, perusahaan atau pemilik properti yang hendak menyewakan properti miliknya dapat menentukan target penyewa dengan lebih tepat dan sesuai dengan kondisi properti yang ada.
 
 *   Problem Statements
     
@@ -166,7 +166,7 @@ Seperti yang telah dijelaskan pada bagian sebelumnya, pada penelitian ini akan d
 
 # **Evaluation**
 
-Pada penelitian ini, proses evaluasi dilakukan dengan menggunakan metrik evaluasi untuk menghitung serta menampilkan hasil akurasi dan mean squared error (MSE) dari model pada masing-masing algoritma yang telah dijalankan. Akurasi adalah ukuran yang menentukan tingkat kemiripan antara hasil prediksi dengan nilai yang sebenarnya (y_test) (Wikipedia, 2022). Sedangkan Mean squared error (MSE) adalah alat ukur untuk mengukur tingkat error yang terjadi dalam model statistik dengan cara menghitung jumlah selisih kuadrat rata-rata nilai sebenarnya dengan nilai prediksi (Dicoding, 2023). MSE didefinisikan dalam persamaan berikut :
+Pada penelitian ini, proses evaluasi dilakukan dengan menggunakan metrik evaluasi untuk menghitung serta menampilkan hasil akurasi dan mean squared error (MSE) dari model pada masing-masing algoritma yang telah dijalankan. Akurasi adalah ukuran yang menentukan tingkat kemiripan antara hasil prediksi dengan nilai yang sebenarnya (y_test) [4]. Sedangkan Mean squared error (MSE) adalah alat ukur untuk mengukur tingkat error yang terjadi dalam model statistik dengan cara menghitung jumlah selisih kuadrat rata-rata nilai sebenarnya dengan nilai prediksi (Dicoding, 2023). MSE didefinisikan dalam persamaan berikut :
 
 ![image](https://github.com/racheladita/Laporan-Proyek-Machine-Learning-Terapan-MLT4---Submission-1-Predictive-Analytics/assets/77524477/fc2ab7d7-fdc7-4a59-9b27-eb6eb55e20b4)
 
@@ -197,16 +197,16 @@ Keterangan:
 
 # **Referensi**
 
-accurate.id. (2021, 11 Januari). Sharing Economy: Pengertian, Konsep, Kelebihan dan Kekurangannya. Diakses pada 20 Juli 2023, dari https://accurate.id/ekonomi-keuangan/sharing-economy/
+[1]    Suparwoko, Woko. (2013). BAB 3 KEBIJAKAN DAN PRAKTEK PEMBANGUNAN PERUMAHAN SEJUMLAH NEGARA DI ASIA-PASIFIK. 10.13140/2.1.2263.8880. 
 
-dicoding.com. (2023). Rangkuman Studi Kasus Pertama: Predictive Analytics. Diakses pada 21 Juli 2023, dari https://www.dicoding.com/academies/319/tutorials/18600
+[2]    M. Ranjbari, G. Morales-Alonso, and R. Carrasco-Gallego, “Conceptualizing the Sharing Economy through Presenting a Comprehensive Framework,” _Sustainability_, vol. 10, no. 7, p. 2336, Jul. 2018, doi: 10.3390/su10072336. [Online]. Available: http://dx.doi.org/10.3390/su10072336
 
-haloryan.com. (2021, 14 Desember). One Hot Encoding Pada Python. Diakses pada 21 Juli 2023, dari https://haloryan.com/blog/one-hot-encoding-pada-python
+[]    dicoding.com. (2023). Rangkuman Studi Kasus Pertama: Predictive Analytics. Diakses pada 21 Juli 2023, dari https://www.dicoding.com/academies/319/tutorials/18600
 
-id.wikipedia.org. (2022, 25 Januari). Akurasi. Diakses pada 21 Juli 2023, dari https://id.wikipedia.org/wiki/
+[]    haloryan.com. (2021, 14 Desember). One Hot Encoding Pada Python. Diakses pada 21 Juli 2023, dari https://haloryan.com/blog/one-hot-encoding-pada-python
 
-quicktable.io. (2022). Cara Melakukan Train Test Split dalam Machine Learning. Diakses pada 21 Juli 2023, dari https://www.quicktable.io/apps/id/train-test-split/
+[]    Santoso, Didik R. (2017). Tim UB Press, Tim UB Press, ed. Pengukuran Stress Mekanik Berbasis Sensor Piezoelektrik: Prinsip Desain dan Implementasi. Malang: UB Press. hlm. 8. ISBN 978-602-432-089-8.
 
-Suparwoko, Woko. 2013. PENINGKATAN KAPASITAS PERUMAHAN SWADAYA DI INDONESIA. Jurnal Universitas Islam Indonesia. 56-52. https://www.researchgate.net/publication/272357548_BAB_3_KEBIJAKAN_DAN_PRAKTEK_PEMBANGUNAN_PERUMAHAN_SEJUMLAH_NEGARA_DI_ASIA-PASIFIK
+[]    quicktable.io. (2022). Cara Melakukan Train Test Split dalam Machine Learning. Diakses pada 21 Juli 2023, dari https://www.quicktable.io/apps/id/train-test-split/
 
-Jurnal UMM, 2023. https://eprints.umm.ac.id/39299/3/BAB%202.pdf
+[]    Jurnal UMM, 2023. https://eprints.umm.ac.id/39299/3/BAB%202.pdf
