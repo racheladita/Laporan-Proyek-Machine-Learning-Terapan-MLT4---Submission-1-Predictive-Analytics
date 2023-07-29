@@ -42,7 +42,7 @@ Penelitian ini bertujuan untuk menganalisis faktor apa saja yang dapat mempengar
     
     b.   Setelah ketiga jenis algoritma tersebut berhasil dijalankan, akan dilakukan evaluasi untuk mengukur nilai akurasi pada masing-masing algoritma.
 
-# **Data Understanding**
+# **_Data Understanding_**
 
 * Penelitian ini menggunakan dataset yang berjudul House Rent Prediction yang dibuat dari website https://www.magicbricks.com/. Namun, penulis mengambil dataset ini dari Kaggle dengan link : https://www.kaggle.com/datasets/iamsouravbanerjee/house-rent-prediction-dataset.
 
