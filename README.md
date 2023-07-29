@@ -184,7 +184,7 @@ Seperti yang telah dijelaskan pada bagian sebelumnya, pada penelitian ini akan d
 
 Pada penelitian ini, proses evaluasi dilakukan dengan menggunakan metrik evaluasi untuk menghitung serta menampilkan hasil akurasi dan mean squared error (MSE) dari model pada masing-masing algoritma yang telah dijalankan. Akurasi adalah ukuran yang menentukan tingkat kemiripan antara hasil prediksi dengan nilai yang sebenarnya (y_test) [7]. Sedangkan _Mean Squared Error_ (MSE) adalah alat ukur untuk mengukur tingkat _error_ yang terjadi dalam model statistik dengan cara menghitung jumlah selisih kuadrat rata-rata nilai sebenarnya dengan nilai prediksi [5]. MSE didefinisikan dalam persamaan berikut :
 
-$$ MSE = { \frac {1} {N} \displaystyle\sum_{i=1}^{N} (y_i - y__pred_i)^2 } $$
+$$ MSE = { \frac {1} {N} \displaystyle\sum_{i=1}^{N} (y_i - y_pred_{i})^2 } $$
 
 Keterangan:
   N = jumlah dataset
