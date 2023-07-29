@@ -6,13 +6,17 @@
 
 # **Domain Proyek**
 
-Perumahan di India memiliki beragam jenis kategori, mulai dari istana milik mantan maharaja yang mewah, hingga gedung apartemen modern di kota-kota besar, bahkan gubuk-gubuk di desa-desa terpencil. Tingginya  angka  pertumbuhan  penduduk, adanya urbanisasi berkelanjutan, dan  masih  lemahnya kondisi ekonomi penduduk menyebabkan kesenjangan pemenuhan kebutuhan perumahan di  India meningkat [1]. Sehingga masih banyak orang di India yang belum memiliki akses terhadap perumahan yang layak.
+India adalah negara yang kaya akan keanekaragaman geografis dan sosial. Namun, negara ini juga dihadapkan pada tantangan yang serius terkait masalah perumahan. Perbedaan signifikan dalam kondisi perumahan antara wilayah perkotaan dan pedesaan menjadi salah satu isu krusial yang perlu diperhatikan.
 
-Menurut Human Rights Measurement Initiative, India baru mencapai 60,9% dari potensi hak atas perumahan yang semestinya dapat terpenuhi berdasarkan tingkat pendapatan negara tersebut. Artinya, masih banyak orang di India yang tidak bisa memperoleh perumahan yang seharusnya bisa mereka dapatkan.
+Wilayah perkotaan di India umumnya ditandai dengan infrastruktur yang lebih baik, aksesibilitas yang lebih baik terhadap pendidikan dan layanan kesehatan, serta beragam pilihan pekerjaan. Namun, sebagai akibat dari urbanisasi berkelanjutan, kota-kota di India seringkali menghadapi lonjakan penduduk yang cepat, yang mengakibatkan peningkatan permintaan akan perumahan. Tingginya angka pertumbuhan penduduk dan kebutuhan perumahan yang belum terpenuhi menyebabkan semakin meningkatnya kesenjangan pemenuhan kebutuhan perumahan di wilayah perkotaan [1].
 
-Salah satu pilihan bagi orang-orang yang belum memiliki rumah adalah menyewa properti, seperti rumah atau toko. Ketika seseorang menyewa, mereka membayar sejumlah uang sebagai imbalan untuk menggunakan properti tersebut sementara waktu. Jenis penyewaan yang ada juga berbeda-beda. Ada yang menyebutnya "sewa kotor" dimana penyewa membayar jumlah sewa tetap, sementara pemilik properti bertanggung jawab atas biaya-biaya lain seperti pajak dan perawatan.
+Di sisi lain, wilayah pedesaan memiliki kondisi perumahan dan infrastruktur yang sering kali lebih sederhana. Akses ke layanan, termasuk pendidikan dan kesehatan, mungkin terbatas di wilayah-wilayah ini. Sebagian besar penduduk pedesaan bergantung pada mata pencaharian pertanian atau pekerjaan terkait pedesaan, dan ketidakstabilan ekonomi di sektor ini dapat mempengaruhi kemampuan mereka untuk membeli atau memiliki rumah yang layak.
 
-Penyewaan properti ini juga termasuk dalam contoh ekonomi berbagi. Ekonomi berbagi merupakan suatu tindakan modernisasi yang perusahaan perantaranya menggunakan platform _online_ untuk memfasilitasi dan menurunkan biaya transaksi nirlaba untuk memberikan akses sementara tanpa transfer kepemilikan pada sumber daya konsumen yang menganggur [2]. Dengan kata lain seseorang atau sekelompok orang dapat memanfaatkan properti (dalam kasus ini properti tempat tinggal) milik orang lain untuk memenuhi kebutuhan mereka.
+Menurut Human Rights Measurement Initiative [8], India baru mencapai 68,7% dari potensi hak atas perumahan yang semestinya dapat terpenuhi berdasarkan tingkat pendapatan negara tersebut. Artinya, masih banyak orang di India yang tidak bisa memperoleh perumahan yang seharusnya bisa mereka dapatkan.
+
+Kekurangan perumahan telah menjadi isu serius bagi sebagian besar masyarakat di India. Salah satu pilihan bagi mereka yang belum memiliki rumah adalah menyewa properti, seperti rumah atau apartemen. Fenomena penyewaan properti ini juga mencerminkan tren ekonomi berbagi yang semakin berkembang pesat di berbagai belahan dunia. Ekonomi berbagi merupakan suatu tindakan modernisasi yang menggunakan platform online untuk memfasilitasi dan menurunkan biaya transaksi nirlaba untuk memberikan akses sementara tanpa transfer kepemilikan pada sumber daya konsumen yang menganggur [2]. Dengan kata lain, seseorang atau sekelompok orang dapat memanfaatkan properti (dalam kasus ini, properti tempat tinggal) milik orang lain untuk memenuhi kebutuhan mereka.
+
+Dalam konteks India, tantangan kekurangan perumahan dan model ekonomi berbagi ini memiliki implikasi sosial, ekonomi, dan kebijakan yang kompleks. Oleh karena itu, langkah-langkah solutif yang holistik dan berkelanjutan diperlukan untuk mengatasi masalah ini dan memastikan bahwa setiap warga negara di India memiliki akses terhadap perumahan yang layak dan memadai.
 
 # **_Business Understanding_**
 
@@ -239,6 +243,8 @@ Keterangan:
 
 [5]    dicoding.com. (2023). Rangkuman Studi Kasus Pertama: Predictive Analytics. Diakses pada 21 Juli 2023, dari https://www.dicoding.com/academies/319/tutorials/18600
 
-[6]    Jurnal UMM, 2023. https://eprints.umm.ac.id/39299/3/BAB%202.pdf
+[6]    Jurnal UMM. (2023). https://eprints.umm.ac.id/39299/3/BAB%202.pdf
 
 [7]    Santoso, Didik R. (2017). Tim UB Press, Tim UB Press, ed. Pengukuran Stress Mekanik Berbasis Sensor Piezoelektrik: Prinsip Desain dan Implementasi. Malang: UB Press. hlm. 8. ISBN 978-602-432-089-8.
+
+[8]    rightstracker.org. (2020). India - HRMI Rights Tracker Quality of Life, Economic and Social Rights. Diakses pada 24 Juli 2023, dari https://rightstracker.org/country/IND
