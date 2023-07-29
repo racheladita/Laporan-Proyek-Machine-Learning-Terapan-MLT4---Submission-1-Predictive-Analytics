@@ -184,32 +184,48 @@ Seperti yang telah dijelaskan pada bagian sebelumnya, pada penelitian ini akan d
 
 Pada penelitian ini, proses evaluasi dilakukan dengan menggunakan metrik evaluasi untuk menghitung serta menampilkan hasil akurasi dan mean squared error (MSE) dari model pada masing-masing algoritma yang telah dijalankan. Akurasi adalah ukuran yang menentukan tingkat kemiripan antara hasil prediksi dengan nilai yang sebenarnya (y_test) [7]. Sedangkan _Mean Squared Error_ (MSE) adalah alat ukur untuk mengukur tingkat _error_ yang terjadi dalam model statistik dengan cara menghitung jumlah selisih kuadrat rata-rata nilai sebenarnya dengan nilai prediksi [5]. MSE didefinisikan dalam persamaan berikut :
 
-$$ MSE = { \frac {1} {N} \displaystyle\sum_{i=1}^{N} (y_i - y_pred_{i})^2 } $$
+$$ MSE = { \frac {1} {N} \displaystyle\sum_{i=1}^{N} (y_i - ypred_i)^2 } $$
 
 Keterangan:
   N = jumlah dataset
-  yi = nilai sebenarnya
-  y_pred = nilai prediksi
+  $$ y_i $$ = nilai sebenarnya
+  $$ ypred_i $$ = nilai prediksi
 
 * Akurasi yang dihasilkan dari masing-masing algoritma yang telah dijalankan adalah sebagai berikut :
   
-    ![image](https://github.com/racheladita/Laporan-Proyek-Machine-Learning-Terapan-MLT4---Submission-1-Predictive-Analytics/assets/77524477/bb2907f6-89a8-47fa-9587-3f5e29f3a462)
+    |     KNN    |     RF     |  Boosting  |
+    |------------|------------|------------|
+    |  0.700835  |  0.762047  |  0.655286  |
 
-    Dengan akurasi tertinggi dihasilkan oleh algoritma Random Forest dengan tingkat akurasi sebesar 76.2%.
+    Tabel 1. Tabel akurasi yang dihasilkan dari masing-masing algoritma 
 
-* Sedangkan untuk hasil perhitungan MSE akan ditampilkan pada gambar di bawah ini :
+    Dari Tabel 1, dapat dilihat bahwa algoritma dengan akurasi tertinggi dihasilkan oleh algoritma _Random Forest_ dengan tingkat akurasi sebesar 76.2%.
+
+* Sedangkan untuk hasil perhitungan MSE pada data latih dan data uji dari masing-masing algoritma akan ditampilkan pada Tabel 2.
   
-    ![image](https://github.com/racheladita/Laporan-Proyek-Machine-Learning-Terapan-MLT4---Submission-1-Predictive-Analytics/assets/77524477/985e1d60-60a9-4f9a-b9e2-32598a70a0a2)
+    |            |     Train     |      Test      |
+    |------------|---------------|----------------|
+    |     KNN    |  48503.16097  |  56972.672536  |
+    |     RF     |  21371.35881  |  45315.587228  |
+    |  Boosting  |  58512.40393  |  65647.005189  |
+
+    Tabel 2. Tabel perhitungan MSE pada data latih dan data uji dari masing-masing algoritma
 
     ![image](https://github.com/racheladita/Laporan-Proyek-Machine-Learning-Terapan-MLT4---Submission-1-Predictive-Analytics/assets/77524477/b9381d31-2989-4dbe-8953-e6c8a5c6bd5e)
 
-    Dapat dilihat bahwa algoritma Random Forest memiliki tingkat error yang lebih rendah jika dibandingkan dengan algoritma lainnya, dengan tingkat error pada data latih sebesar 21371.358809 dan tingkat error pada data uji sebesar 45315.587228.
+    Gambar 9. Grafik perbandingan MSE antara data latih dan data uji pada masing-masing algoritma
+
+    Dari Gambar 9, dapat dilihat bahwa algoritma _Random Forest_ memiliki tingkat _error_ yang lebih rendah jika dibandingkan dengan algoritma lainnya, dengan tingkat _error_ pada data latih sebesar 21371.35881 dan tingkat _error_ pada data uji sebesar 45315.587228.
 
 *  Hasil pengujian prediksi dari masing-masing model
   
-    ![image](https://github.com/racheladita/Laporan-Proyek-Machine-Learning-Terapan-MLT4---Submission-1-Predictive-Analytics/assets/77524477/0f33218d-d35b-4403-8081-f34284ab32be)
+    |            |     y_true    |  prediksi_KNN  |   prediksi_RF   |  prediksi_Boosting  |
+    |------------|---------------|----------------|-----------------|---------------------|
+    |    2735    |     13500     |     21785.7    |     12756.4     |        19640.2      |
 
-    Dapat dilihat bahwa hasil prediksi menggunakan algoritma Random Forest adalah hasil yang paling mendekati nilai sebenarnya meskipun hasil prediksi ini tidak begitu akurat dengan nilai sebenarnya dikarenakan akurasinya yang belum begitu tinggi. Oleh karena itu, algoritma Random Forest dipilih sebagai model utama yang digunakan untuk memprediksi harga sewa rumah di India.
+    Tabel 3. Hasil pengujian prediksi dari masing-masing model
+
+    Dari Tabel 3, dapat dilihat bahwa hasil prediksi menggunakan algoritma _Random Forest_ adalah hasil yang paling mendekati nilai sebenarnya, walaupun hasil prediksi ini tidak begitu akurat dengan nilai sebenarnya dikarenakan akurasinya yang belum begitu tinggi. Meskipun demikian, algoritma _Random Forest_ dipilih sebagai model utama yang digunakan untuk memprediksi harga sewa rumah di India.
 
 # **Referensi**
 
