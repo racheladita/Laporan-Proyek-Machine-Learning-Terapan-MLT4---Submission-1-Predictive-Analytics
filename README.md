@@ -1,4 +1,4 @@
-# **Laporan Proyek Machine Learning - Adita Putri Puspaningrum**
+# **Laporan Proyek _Machine Learning_ - Adita Putri Puspaningrum**
 
 ---
 
