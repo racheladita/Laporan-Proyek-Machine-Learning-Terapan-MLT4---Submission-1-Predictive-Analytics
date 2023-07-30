@@ -253,7 +253,7 @@ Keterangan:
 
 [1]    Suparwoko, Woko. (2013). BAB 3 KEBIJAKAN DAN PRAKTEK PEMBANGUNAN PERUMAHAN SEJUMLAH NEGARA DI ASIA-PASIFIK. 10.13140/2.1.2263.8880. 
 
-[2]    M. Ranjbari, G. Morales-Alonso, and R. Carrasco-Gallego, “Conceptualizing the Sharing Economy through Presenting a Comprehensive Framework,” _Sustainability_, vol. 10, no. 7, p. 2336, Jul. 2018, doi: 10.3390/su10072336. [Online]. Available: http://dx.doi.org/10.3390/su10072336
+[2]    M. Ranjbari, G. Morales-Alonso, and R. Carrasco-Gallego, “Conceptualizing the Sharing Economy through Presenting a Comprehensive Framework,” _Sustainability_, vol. 10, no. 7, p. 2336, Jul. 2018, doi: 10.3390/su10072336. [Online]. Tersedia: [tautan](http://dx.doi.org/10.3390/su10072336). 
 
 [3]    HaloRyan. "One Hot Encoding Pada Python". Tersedia: [tautan](https://haloryan.com/blog/one-hot-encoding-pada-python). Diakses pada 21 Juli 2023.
 
