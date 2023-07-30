@@ -154,7 +154,7 @@ Seperti yang telah dijelaskan pada bagian sebelumnya, pada penelitian ini akan d
   
    KNN bekerja dengan membandingkan jarak satu sampel ke sampel pelatihan lain dengan memilih sejumlah k tetangga terdekat (dengan k adalah sebuah angka positif) yang biasa digunakan untuk kasus klasifikasi dan regresi [5]. Data baru akan diberikan label klasifikasi yang sama dengan mayoritas tetangga terdekatnya jika algoritma digunakan untuk klasifikasi. Jika KNN digunakan untuk regresi, data baru akan diberikan nilai target yang merupakan rata-rata dari nilai target tetangga terdekatnya.
 
-   Kelebihan KNN adalah sederhana dalam konsep, mudah diimplementasikan, dan cocok untuk data yang memiliki pola non-linear. Namun, KNN cenderung lambat dalam mengklasifikasikan data yang besar dan memiliki beberapa kelemahan, seperti sensitif terhadap skala data dan rentan terhadap outlier. 
+   Kelebihan KNN adalah sederhana dalam konsep, mudah diimplementasikan, dan cocok untuk data yang memiliki pola non-linear [9]. Namun, KNN cenderung lambat dalam mengklasifikasikan data yang besar dan memiliki beberapa kelemahan, seperti sensitif terhadap skala data dan rentan terhadap _outlier_ [9]. 
 
    Pada penelitian ini, akan digunakan _library_ sklearn.neighbors untuk bisa menjalankan algoritma KNeighborsRegressor. Tahap pertama yang dilakukan adalah menentukan parameter n_neighbors, dimana penulis menggunakan n_neighbors = 14 untuk mendapatkan akurasi yang optimal. Parameter n_neighbors sendiri merupakan jumlah k tetangga tedekat yang merupakan parameter terpenting dalam algoritma KNN. Selanjutnya, untuk membangun model dijalankan perintah
   ```
@@ -183,7 +183,7 @@ Seperti yang telah dijelaskan pada bagian sebelumnya, pada penelitian ini akan d
   
    Algoritma _boosting_ bekerja dengan membangun model dari data latih yang kemudian membuat model kedua yang bertugas memperbaiki kesalahan dari model pertama, dimana model ditambahkan sampai data latih terprediksi dengan baik atau telah mencapai jumlah maksimum model untuk ditambahkan [5]. Pada awalnya, AdaBoost akan memberikan bobot yang sama pada semua data latih. Kemudian, algoritma akan membangun model lemah pertama dan memberikan bobot yang lebih tinggi pada data yang salah terklasifikasi. Model berikutnya akan difokuskan pada data yang memiliki bobot tinggi, dan proses ini diulang untuk beberapa iterasi atau hingga mencapai batas kesalahan yang diinginkan. Selama tahap prediksi, setiap model lemah akan memberikan prediksi dan bobot yang lebih tinggi diberikan pada model yang memiliki performa lebih baik. Hasil akhir dari algoritma ini adalah hasil prediksi yang diambil dengan bobot terhadap setiap model lemah.
 
-   Kelebihan dari AdaBoost adalah kemampuannya untuk meningkatkan akurasi prediksi, mengurangi _overfitting_, dan dapat digunakan dengan berbagai jenis model lemah. Algoritma ini juga efektif dalam menangani data yang tidak seimbang (_imbalanced data_). Namun, AdaBoost rentan terhadap _noise_ atau _outlier_.
+   Kelebihan dari AdaBoost adalah kemampuannya untuk meningkatkan akurasi prediksi, mengurangi _overfitting_, dan dapat digunakan dengan berbagai jenis model lemah [10]. Algoritma ini juga efektif dalam menangani data yang tidak seimbang (_imbalanced data_). Namun, AdaBoost rentan terhadap _noise_ atau _outlier_ [10].
 
    Pada penelitian ini, akan digunakan _library_ sklearn.ensemble untuk bisa menjalankan algoritma AdaBoostRegressor. Tahap pertama yang dilakukan adalah menentukan parameter n_estimators, max_depth, random_state dan n_jobs.
    
@@ -255,14 +255,18 @@ Keterangan:
 
 [2]    M. Ranjbari, G. Morales-Alonso, and R. Carrasco-Gallego, “Conceptualizing the Sharing Economy through Presenting a Comprehensive Framework,” _Sustainability_, vol. 10, no. 7, p. 2336, Jul. 2018, doi: 10.3390/su10072336. [Online]. Available: http://dx.doi.org/10.3390/su10072336
 
-[3]    haloryan.com. (2021, 14 Desember). One Hot Encoding Pada Python. Diakses pada 21 Juli 2023, dari https://haloryan.com/blog/one-hot-encoding-pada-python
+[3]    HaloRyan. "One Hot Encoding Pada Python". Tersedia: [tautan](https://haloryan.com/blog/one-hot-encoding-pada-python). Diakses pada 21 Juli 2023.
 
-[4]    quicktable.io. (2022). Cara Melakukan Train Test Split dalam Machine Learning. Diakses pada 21 Juli 2023, dari https://www.quicktable.io/apps/id/train-test-split/
+[4]    QuickTran. "Cara Melakukan Train Test Split dalam Machine Learning". Tersedia: [tautan](https://www.quicktable.io/apps/id/train-test-split/). Diakses pada 21 Juli 2023.
 
-[5]    dicoding.com. (2023). Rangkuman Studi Kasus Pertama: Predictive Analytics. Diakses pada 21 Juli 2023, dari https://www.dicoding.com/academies/319/tutorials/18600
+[5]    dicoding. "Rangkuman Studi Kasus Pertama: Predictive Analytics". Tersedia: [tautan](https://www.dicoding.com/academies/319/tutorials/18600). Diakses pada 21 Juli 2023.
 
-[6]    Jurnal UMM. (2023). https://eprints.umm.ac.id/39299/3/BAB%202.pdf
+[6]    Jurnal UMM. Tersedia: [tautan](https://eprints.umm.ac.id/39299/3/BAB%202.pdf). Diakses pada 21 Juli 2023.
 
 [7]    Santoso, Didik R. (2017). Tim UB Press, Tim UB Press, ed. Pengukuran Stress Mekanik Berbasis Sensor Piezoelektrik: Prinsip Desain dan Implementasi. Malang: UB Press. hlm. 8. ISBN 978-602-432-089-8.
 
-[8]    rightstracker.org. (2020). India - HRMI Rights Tracker Quality of Life, Economic and Social Rights. Diakses pada 24 Juli 2023, dari https://rightstracker.org/country/IND
+[8]    HRMI Rights Tracker India. "Quality of Life, Economic and Social Rights". Tersedia: [tautan](https://rightstracker.org/country/IND). Diakses pada 24 Juli 2023.
+
+[9]    Medium. "Klasifikasi menggunakan Metode KNN (K-Nearest Neighbor) dalam Python". Tersedia: [tautan](https://medium.com/@16611130/klasifikasi-menggunakan-metode-knn-k-nearest-neighbor-dalam-python-a40e79a74101). Diakses pada 24 Juli 2023.
+
+[10]   Dataaspirant. "Adaboost Algorithm: Boosting Your ML Models to the Next Level". Tersedia: [tautan](https://medium.com/@16611130/klasifikasi-menggunakan-metode-knn-k-nearest-neighbor-dalam-python-a40e79a74101). Diakses pada 24 Juli 2023.
