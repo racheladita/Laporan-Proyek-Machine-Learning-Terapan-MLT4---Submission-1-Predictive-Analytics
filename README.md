@@ -209,12 +209,9 @@ Pada penelitian ini, proses evaluasi dilakukan dengan menggunakan metrik evaluas
 $$ MSE = { \frac {1} {N} \displaystyle\sum_{i=1}^{N} (y_i - ypred_i)^2 } $$
 
 Keterangan:
-
   N = jumlah dataset
-
-  $$ {y_i} = nilai sebenarnya $$ 
-  
-  $$ {ypred_i} = nilai prediksi $$ 
+  y = nilai sebenarnya
+  ypred = nilai prediksi 
 
 * Akurasi yang dihasilkan dari masing-masing algoritma yang telah dijalankan adalah sebagai berikut :
   
