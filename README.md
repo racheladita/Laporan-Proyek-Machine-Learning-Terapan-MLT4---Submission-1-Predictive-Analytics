@@ -152,14 +152,22 @@ Seperti yang telah dijelaskan pada bagian sebelumnya, pada penelitian ini akan d
 
 *  _K-Nearest Neighbour_ (KNN)
   
-   KNN bekerja dengan membandingkan jarak satu sampel ke sampel pelatihan lain dengan memilih sejumlah k tetangga terdekat (dengan k adalah sebuah angka positif) yang biasa digunakan untuk kasus klasifikasi dan regresi [5]. Pada penelitian ini, akan digunakan _library_ sklearn.neighbors untuk bisa menjalankan algoritma KNeighborsRegressor. Tahap pertama yang dilakukan adalah menentukan parameter n_neighbors, dimana penulis menggunakan n_neighbors = 14 untuk mendapatkan akurasi yang optimal. Parameter n_neighbors sendiri merupakan jumlah k tetangga tedekat yang merupakan parameter terpenting dalam algoritma KNN. Selanjutnya, untuk membangun model dijalankan perintah
+   KNN bekerja dengan membandingkan jarak satu sampel ke sampel pelatihan lain dengan memilih sejumlah k tetangga terdekat (dengan k adalah sebuah angka positif) yang biasa digunakan untuk kasus klasifikasi dan regresi [5]. Data baru akan diberikan label klasifikasi yang sama dengan mayoritas tetangga terdekatnya jika algoritma digunakan untuk klasifikasi. Jika KNN digunakan untuk regresi, data baru akan diberikan nilai target yang merupakan rata-rata dari nilai target tetangga terdekatnya.
+
+   Kelebihan KNN adalah sederhana dalam konsep, mudah diimplementasikan, dan cocok untuk data yang memiliki pola non-linear. Namun, KNN cenderung lambat dalam mengklasifikasikan data yang besar dan memiliki beberapa kelemahan, seperti sensitif terhadap skala data dan rentan terhadap outlier. 
+
+   Pada penelitian ini, akan digunakan _library_ sklearn.neighbors untuk bisa menjalankan algoritma KNeighborsRegressor. Tahap pertama yang dilakukan adalah menentukan parameter n_neighbors, dimana penulis menggunakan n_neighbors = 14 untuk mendapatkan akurasi yang optimal. Parameter n_neighbors sendiri merupakan jumlah k tetangga tedekat yang merupakan parameter terpenting dalam algoritma KNN. Selanjutnya, untuk membangun model dijalankan perintah
   ```
   knn.fit(X_train, y_train)
   ```
 
 *  _Random Forest_
   
-   _Random Forest_ adalah salah satu algoritma _supervised learning_ yang termasuk ke dalam kelompok model _ensemble_ (group) yang disusun dari banyak algoritma pohon (_decision tree_) yang pembagian data dan fiturnya dipilih secara acak [5]. Kelebihan dari menggunakan algoritma ini yaitu dapat mengatasi _noise_ dan _missing value_ serta dapat mengatasi data dalam jumlah yang besar, adapun kekurangan pada algoritma _Random Forest_ yaitu interpretasi yang sulit dan membutuhkan _tuning_ model yang tepat untuk data [6]. Pada penelitian ini, akan digunakan _library_ sklearn.ensemble untuk bisa menjalankan algoritma RandomForestRegressor. Tahap pertama yang dilakukan adalah menentukan parameter n_estimators, max_depth, random_state dan n_jobs.
+   _Random Forest_ adalah salah satu algoritma _supervised learning_ yang termasuk ke dalam kelompok model _ensemble_ (group) yang disusun dari banyak algoritma pohon (_decision tree_) yang pembagian data dan fiturnya dipilih secara acak [5]. Selama tahap prediksi, setiap pohon memberikan prediksi dan hasil akhir diambil dengan mengambil mayoritas prediksi dari semua pohon (untuk klasifikasi) atau rata-rata prediksi dari semua pohon (untuk regresi).
+
+   Kelebihan dari menggunakan algoritma ini yaitu dapat mengatasi _noise_ dan _missing value_, dapat mengatasi data dalam jumlah yang besar, tidak rentan terhadap _overfitting_, dan dapat memberikan informasi mengenai pentingnya fitur dalam prediksinya [6]. Adapun kekurangan pada algoritma _Random Forest_ yaitu interpretasi yang sulit karena gabungan dari banyak pohon keputusan dan membutuhkan _tuning_ model yang tepat untuk data [6]. 
+
+   Pada penelitian ini, akan digunakan _library_ sklearn.ensemble untuk bisa menjalankan algoritma RandomForestRegressor. Tahap pertama yang dilakukan adalah menentukan parameter n_estimators, max_depth, random_state dan n_jobs.
    
    *  Parameter n_estimators merupakan jumlah trees (pohon) di forest dan penulis menggunakan n_estimator = 50.
    *  Parameter max_depth adalah kedalaman maksimum setiap pohon dimana penulis menggunakan max_depth = 10.
@@ -173,7 +181,11 @@ Seperti yang telah dijelaskan pada bagian sebelumnya, pada penelitian ini akan d
 
 *  AdaBoost
   
-   Algoritma _boosting_ bekerja dengan membangun model dari data latih yang kemudian membuat model kedua yang bertugas memperbaiki kesalahan dari model pertama, dimana model ditambahkan sampai data latih terprediksi dengan baik atau telah mencapai jumlah maksimum model untuk ditambahkan [5]. Pada penelitian ini, akan digunakan _library_ sklearn.ensemble untuk bisa menjalankan algoritma AdaBoostRegressor. Tahap pertama yang dilakukan adalah menentukan parameter n_estimators, max_depth, random_state dan n_jobs.
+   Algoritma _boosting_ bekerja dengan membangun model dari data latih yang kemudian membuat model kedua yang bertugas memperbaiki kesalahan dari model pertama, dimana model ditambahkan sampai data latih terprediksi dengan baik atau telah mencapai jumlah maksimum model untuk ditambahkan [5]. Pada awalnya, AdaBoost akan memberikan bobot yang sama pada semua data latih. Kemudian, algoritma akan membangun model lemah pertama dan memberikan bobot yang lebih tinggi pada data yang salah terklasifikasi. Model berikutnya akan difokuskan pada data yang memiliki bobot tinggi, dan proses ini diulang untuk beberapa iterasi atau hingga mencapai batas kesalahan yang diinginkan. Selama tahap prediksi, setiap model lemah akan memberikan prediksi dan bobot yang lebih tinggi diberikan pada model yang memiliki performa lebih baik. Hasil akhir dari algoritma ini adalah hasil prediksi yang diambil dengan bobot terhadap setiap model lemah.
+
+   Kelebihan dari AdaBoost adalah kemampuannya untuk meningkatkan akurasi prediksi, mengurangi _overfitting_, dan dapat digunakan dengan berbagai jenis model lemah. Algoritma ini juga efektif dalam menangani data yang tidak seimbang (_imbalanced data_). Namun, AdaBoost rentan terhadap _noise_ atau _outlier_.
+
+   Pada penelitian ini, akan digunakan _library_ sklearn.ensemble untuk bisa menjalankan algoritma AdaBoostRegressor. Tahap pertama yang dilakukan adalah menentukan parameter n_estimators, max_depth, random_state dan n_jobs.
    
    *  Parameter n_estimators merupakan jumlah maksimum estimator di mana _boosting_ dihentikan dan penulis menggunakan n_estimator = 40.
    *  Parameter learning_rate adalah bobot yang diterapkan pada setiap _regressor_ di masing-masing proses iterasi _boosting_ dimana penulis menggunakan learning_rate = 0.05.
@@ -183,6 +195,12 @@ Seperti yang telah dijelaskan pada bagian sebelumnya, pada penelitian ini akan d
   ```
   boosting.fit(X_train, y_train)
   ```
+
+*  Alasan Mengapa Algoritma-algoritma tersebut Dipilih :
+
+   *  KNN : Algoritma KNN dipilih karena kesederhanaan konsepnya, cocok untuk data non-linear, dan tidak memerlukan proses pembelajaran yang kompleks.
+   *  _Random Forest_ : _Random Forest_ dipilih karena mampu menangani data yang kompleks dan berdimensi tinggi, mengurangi varians prediksi, dan memiliki kemampuan untuk memberikan informasi pentingnya fitur.
+   *  AdaBoost : AdaBoost dipilih karena efektivitasnya dalam meningkatkan performa prediksi, mengurangi _overfitting_, dan kemampuannya dalam menangani data yang tidak seimbang.
 
 # **_Evaluation_**
 
