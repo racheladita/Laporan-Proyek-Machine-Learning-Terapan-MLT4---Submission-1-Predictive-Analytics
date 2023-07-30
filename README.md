@@ -14,7 +14,7 @@ Di sisi lain, wilayah pedesaan memiliki kondisi perumahan dan infrastruktur yang
 
 Menurut _Human Rights Measurement Initiative_ [8], India baru mencapai 68,7% dari potensi hak atas perumahan yang semestinya dapat terpenuhi berdasarkan tingkat pendapatan negara tersebut. Artinya, masih banyak orang di India yang tidak bisa memperoleh perumahan yang seharusnya bisa mereka dapatkan.
 
-Kekurangan perumahan telah menjadi isu serius bagi sebagian besar masyarakat di India. Salah satu pilihan bagi mereka yang belum memiliki rumah adalah menyewa properti, seperti rumah atau apartemen. Fenomena penyewaan properti ini juga mencerminkan tren ekonomi berbagi yang semakin berkembang pesat di berbagai belahan dunia. Ekonomi berbagi merupakan suatu tindakan modernisasi yang menggunakan platform online untuk memfasilitasi dan menurunkan biaya transaksi nirlaba untuk memberikan akses sementara tanpa transfer kepemilikan pada sumber daya konsumen yang menganggur [2]. Dengan kata lain, seseorang atau sekelompok orang dapat memanfaatkan properti (dalam kasus ini, properti tempat tinggal) milik orang lain untuk memenuhi kebutuhan mereka.
+Kekurangan perumahan telah menjadi isu serius bagi sebagian besar masyarakat di India. Salah satu pilihan bagi mereka yang belum memiliki rumah adalah menyewa properti, seperti rumah atau apartemen. Fenomena penyewaan properti ini juga mencerminkan tren ekonomi berbagi yang semakin berkembang pesat di berbagai belahan dunia. Ekonomi berbagi merupakan suatu tindakan modernisasi yang menggunakan platform _online_ untuk memfasilitasi dan menurunkan biaya transaksi nirlaba untuk memberikan akses sementara tanpa transfer kepemilikan pada sumber daya konsumen yang menganggur [2]. Dengan kata lain, seseorang atau sekelompok orang dapat memanfaatkan properti (dalam kasus ini, properti tempat tinggal) milik orang lain untuk memenuhi kebutuhan mereka.
 
 Dalam konteks India, tantangan kekurangan perumahan dan model ekonomi berbagi ini memiliki implikasi sosial, ekonomi, dan kebijakan yang kompleks. Oleh karena itu, langkah-langkah solutif yang holistik dan berkelanjutan diperlukan untuk mengatasi masalah ini dan memastikan bahwa setiap warga negara di India memiliki akses terhadap perumahan yang layak dan memadai.
 
@@ -50,9 +50,7 @@ Penelitian ini bertujuan untuk menganalisis faktor apa saja yang dapat mempengar
 
 * Penelitian ini menggunakan dataset yang berjudul 'House Rent Prediction' yang dibuat dari _website_ https://www.magicbricks.com/. Namun, penulis mengambil dataset ini dari Kaggle dengan link [dataset](https://www.kaggle.com/datasets/iamsouravbanerjee/house-rent-prediction-dataset).
 
-
 * Dataset ini memiliki format CSV (*comma separated value*) yang berjumlah 4.746 data dengan 12 fitur, dimana 8 fitur bertipe *object* sedangkan 4 fitur sisanya bertipe *int64*.
-
 
 * Variabel-variabel yang terdapat pada dataset 'House Rent Prediction' ini adalah sebagai berikut :
   1.  'Posted On' : Tanggal data di-_posting_.
@@ -70,8 +68,8 @@ Penelitian ini bertujuan untuk menganalisis faktor apa saja yang dapat mempengar
       
   Dari kedua belas fitur tersebut, fitur 'Posted On' merupakan fitur yang tidak begitu mempengaruhi harga sewa rumah, sehingga fitur 'Posted On' bisa langsung dihapus.   
 
-
 * _Explotary Data Analysis_
+  
   *   _Univariate Analysis_
     
       ![image](https://github.com/racheladita/Laporan-Proyek-Machine-Learning-Terapan-MLT4---Submission-1-Predictive-Analytics/assets/77524477/a5fefd6c-ca66-4a30-aaa5-8b0bde5bc751)
@@ -79,8 +77,8 @@ Penelitian ini bertujuan untuk menganalisis faktor apa saja yang dapat mempengar
       Gambar 1. Analisis univariat
 
       Gambar di atas merupakan grafik sebaran analisis univariat untuk setiap fitur numerik yang direpresentasikan secara terpisah. Dari grafik tersebut, informasi yang dapat diambil adalah sebagai berikut :
-      1. Rumah yang disewakan memiliki 1 hingga 3 BHK (Bedroom, Hall, Kitchen), dimana jumlah BHK terbanyak adalah 2.
-      2. Kebanyakan rumah yang disewakan memiliki ukuran atau luas bangunan di bawah 2000 square feet.
+      1. Rumah yang disewakan memiliki 1 hingga 3 BHK (_Bedroom_, _Hall_, _Kitchen_), dimana jumlah BHK terbanyak adalah 2.
+      2. Kebanyakan rumah yang disewakan memiliki ukuran atau luas bangunan di bawah 2000 _square feet_.
       3. Rumah yang disewakan memiliki 1 hingga 3 kamar mandi, dimana jumlah kamar mandi terbanyak adalah 2.
       4. Harga sewa rumah rata-rata di bawah 30.000.
 
@@ -199,7 +197,7 @@ Seperti yang telah dijelaskan pada bagian sebelumnya, pada penelitian ini akan d
    *  Parameter learning_rate adalah bobot yang diterapkan pada setiap _regressor_ di masing-masing proses iterasi _boosting_ dimana penulis menggunakan learning_rate = 0.05.
    *  Parameter random_state digunakan untuk mengontrol _random number generator_ yang digunakan dan penulis menggunakan random_state = 5.
 
-   Selanjutnya, setelah seluruh parameter berhasil diatur, untuk membangun model _AdaBoost_ akan dijalankan perintah
+   Selanjutnya, setelah seluruh parameter berhasil diatur, untuk membangun model AdaBoost akan dijalankan perintah
   ```
   boosting.fit(X_train, y_train)
   ```
