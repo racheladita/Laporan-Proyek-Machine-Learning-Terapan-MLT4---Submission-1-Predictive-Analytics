@@ -42,28 +42,28 @@ Penelitian ini bertujuan untuk menganalisis faktor apa saja yang dapat mempengar
   
     Untuk memenuhi tujuan dari penelitian ini, berikut merupakan solusi yang dapat penulis ajukan :
     
-    a.   Untuk mengetahui algoritma yang terbaik dalam menentukan pilihan penyewaan rumah, akan dilakukan komparasi terhadap tiga jenis algoritma, yaitu KNN, Random Forest dan AdaBoost.
+    a.   Untuk mengetahui algoritma yang terbaik dalam menentukan pilihan penyewaan rumah, akan dilakukan komparasi terhadap tiga jenis algoritma, yaitu _K-Nearest Neighbour_ (KNN), _Random Forest_ dan AdaBoost.
     
     b.   Setelah ketiga jenis algoritma tersebut berhasil dijalankan, akan dilakukan evaluasi untuk mengukur nilai akurasi pada masing-masing algoritma.
 
 # **_Data Understanding_**
 
-* Penelitian ini menggunakan dataset yang berjudul House Rent Prediction yang dibuat dari website https://www.magicbricks.com/. Namun, penulis mengambil dataset ini dari Kaggle dengan link : https://www.kaggle.com/datasets/iamsouravbanerjee/house-rent-prediction-dataset.
+* Penelitian ini menggunakan dataset yang berjudul 'House Rent Prediction' yang dibuat dari _website_ https://www.magicbricks.com/. Namun, penulis mengambil dataset ini dari Kaggle dengan link [dataset](https://www.kaggle.com/datasets/iamsouravbanerjee/house-rent-prediction-dataset).
 
 
 * Dataset ini memiliki format CSV (*comma separated value*) yang berjumlah 4.746 data dengan 12 fitur, dimana 8 fitur bertipe *object* sedangkan 4 fitur sisanya bertipe *int64*.
 
 
 * Variabel-variabel yang terdapat pada dataset 'House Rent Prediction' ini adalah sebagai berikut :
-  1.  'Posted On' : Tanggal data diposting.
+  1.  'Posted On' : Tanggal data di-_posting_.
   2.  'BHK' : Jumlah dari kamar tidur, aula, dan dapur.
   3.  'Rent' : Harga sewa dari rumah/apartemen.
-  4.  'Size' : Ukuran dari rumah/apartemen dalam square feet (sqft)
+  4.  'Size' : Ukuran dari rumah/apartemen dalam _square feet_ (sqft).
   5.  'Floor' : Letak lantai dari apartemen/rumah susun yang disewakan dan jumlah lantai dari bangunan rumah/apartemen tersebut.
-  6.  'Area Type' : Ukuran dari rumah dalam kategori Super Area, Carpet Area atau Build Area.
+  6.  'Area Type' : Ukuran dari rumah dalam kategori 'Super Area', 'Carpet Area' atau 'Build Area'.
   7.  'Area Locality' : Lokasi rumah/apartemen.
   8.  'City' : Kota dimana rumah/apartemen berada.
-  9.  'Furnishing Status' : Status perabotan rumah/apartemen, baik Furnished, Semi-Furnished atau Unfurnished.
+  9.  'Furnishing Status' : Status perabotan rumah/apartemen, baik 'Furnished', 'Semi-Furnished' atau 'Unfurnished'.
   10. 'Tenant Preferred' : Jenis penyewa yang diinginkan oleh pemilik atau agen.
   11. 'Bathroom' : Jumlah kamar mandi.
   12. 'Point of Contact' : Kontak yang harus dihubungi untuk informasi lebih lanjut mengenai rumah/apartemen yang disewakan.
@@ -84,7 +84,7 @@ Penelitian ini bertujuan untuk menganalisis faktor apa saja yang dapat mempengar
       3. Rumah yang disewakan memiliki 1 hingga 3 kamar mandi, dimana jumlah kamar mandi terbanyak adalah 2.
       4. Harga sewa rumah rata-rata di bawah 30.000.
 
-  *   Multivariate Analysis
+  *   _Multivariate Analysis_
     
       ![image](https://github.com/racheladita/Laporan-Proyek-Machine-Learning-Terapan-MLT4---Submission-1-Predictive-Analytics/assets/77524477/887d7a47-5474-4b57-8668-bd4061d93797)
  
@@ -148,7 +148,7 @@ Berikut ini merupakan tahapan-tahapan yang dilakukan dalam mempersiapkan data se
 
 # **_Modeling_**
 
-Seperti yang telah dijelaskan pada bagian sebelumnya, pada penelitian ini akan dilakukan pemodelan dengan menggunakan 3 algoritma yang berbeda, yaitu K-Nearest Neighbour (KNN), Random Forest dan AdaBoost.
+Seperti yang telah dijelaskan pada bagian sebelumnya, pada penelitian ini akan dilakukan pemodelan dengan menggunakan 3 algoritma yang berbeda, yaitu _K-Nearest Neighbour_ (KNN), _Random Forest_ dan AdaBoost.
 
 *  _K-Nearest Neighbour_ (KNN)
   
@@ -221,7 +221,7 @@ Keterangan:
 
     Tabel 1. Tabel akurasi yang dihasilkan dari masing-masing algoritma 
 
-    Dari Tabel 1, dapat dilihat bahwa algoritma dengan akurasi tertinggi dihasilkan oleh algoritma _Random Forest_ dengan tingkat akurasi sebesar 76.2%.
+    Dari Tabel 1, dapat dilihat bahwa algoritma KNN memiliki tingkat akurasi sebesar 70.08%, algoritma _Random Forest_ memiliki tingkat akurasi sebesar 76.21% dan algoritma _Boosting_ (AdaBoost) memiliki tingkat akurasi sebesar 65.53%.
 
 * Sedangkan untuk hasil perhitungan MSE pada data latih dan data uji dari masing-masing algoritma akan ditampilkan pada Tabel 2.
   
@@ -237,7 +237,7 @@ Keterangan:
 
     Gambar 9. Grafik perbandingan MSE antara data latih dan data uji pada masing-masing algoritma
 
-    Dari Gambar 9, dapat dilihat bahwa algoritma _Random Forest_ memiliki tingkat _error_ yang lebih rendah jika dibandingkan dengan algoritma lainnya, dengan tingkat _error_ pada data latih sebesar 21371.35881 dan tingkat _error_ pada data uji sebesar 45315.587228.
+    Dari Tabel 2 dan Gambar 9, dapat dilihat bahwa algoritma _Random Forest_ memiliki tingkat _error_ yang lebih rendah jika dibandingkan dengan algoritma lainnya, dengan tingkat _error_ pada data latih sebesar 21371.35881 dan tingkat _error_ pada data uji sebesar 45315.587228.
 
 *  Hasil pengujian prediksi dari masing-masing model
   
@@ -247,7 +247,17 @@ Keterangan:
 
     Tabel 3. Hasil pengujian prediksi dari masing-masing model
 
-    Dari Tabel 3, dapat dilihat bahwa hasil prediksi menggunakan algoritma _Random Forest_ adalah hasil yang paling mendekati nilai sebenarnya, walaupun hasil prediksi ini tidak begitu akurat dengan nilai sebenarnya dikarenakan akurasinya yang belum begitu tinggi. Meskipun demikian, algoritma _Random Forest_ dipilih sebagai model utama yang digunakan untuk memprediksi harga sewa rumah di India.
+    Dari Tabel 3, dapat dilihat bahwa hasil prediksi menggunakan algoritma _Random Forest_ adalah hasil yang paling mendekati nilai sebenarnya, walaupun hasil prediksi ini tidak begitu akurat dengan nilai sebenarnya dikarenakan akurasinya yang belum begitu tinggi. 
+
+   Dari data yang telah disajikan, terlihat bahwa algoritma _Random Forest_ memiliki akurasi tertinggi sebesar 76.21% dan tingkat _error_ yang lebih rendah dibandingkan dengan algoritma lainnya pada data latih dan data uji. Hal ini menunjukkan bahwa _Random Forest_ memiliki performa yang lebih baik dalam memprediksi harga sewa rumah di India dibandingkan dengan algoritma-algoritma lain yang digunakan dalam penelitian ini. Meskipun hasil prediksi _Random Forest_ belum sepenuhnya akurat, hasilnya masih lebih mendekati nilai sebenarnya dibandingkan dengan algoritma lainnya. Sebagai hasilnya, algoritma _Random Forest_ dipilih sebagai model utama untuk memprediksi harga sewa rumah di India.
+
+   Dalam analisis komparatif, perlu diperhatikan bahwa setiap algoritma memiliki kelebihan dan kelemahan masing-masing. Misalnya, KNN bisa menjadi pilihan yang baik untuk data non-linear dan sederhana dalam konsepnya. Namun, _Random Forest_ menonjol dalam mengatasi data yang kompleks dan berdimensi tinggi serta mengurangi varians kesalahan prediksi. Di sisi lain, AdaBoost efektif dalam meningkatkan performa prediksi dengan menggabungkan model-model lemah menjadi model yang kuat. Jika interpretasi model menjadi prioritas, KNN bisa menjadi pilihan karena modelnya mudah diinterpretasi. Namun, jika fokus utamanya adalah mendapatkan akurasi dan prediksi terbaik yang mendekati nilai sebenarnya, _Random Forest_ bisa menjadi pilihan yang lebih baik.
+
+# **Kesimpulan**
+
+Penelitian ini bertujuan untuk menganalisis faktor-faktor yang mempengaruhi pemilihan penyewaan rumah dan memprediksi pilihan terbaik penyewaan rumah dengan menggunakan algoritma KNN, _Random Forest_, dan AdaBoost. Dari analisis ini, berhasil diidentifikasi faktor-faktor yang memengaruhi keputusan penyewaan rumah, dan algoritma-algoritma yang diterapkan memberikan prediksi yang memadai. Algoritma _Random Forest_ menunjukkan performa yang paling mendekati nilai sebenarnya dalam memprediksi pilihan terbaik untuk menyewa rumah. 
+
+Meskipun tujuan utama penelitian ini telah tercapai, untuk optimalisasi lebih lanjut, beberapa improvisasi pada model dapat dilakukan untuk meningkatkan kualitas prediksi dan akurasi sehingga dapat memberikan wawasan yang lebih akurat dan relevan bagi perusahaan atau pemilik properti dalam menentukan target penyewa dengan lebih tepat dan efisien.
 
 # **Referensi**
 
